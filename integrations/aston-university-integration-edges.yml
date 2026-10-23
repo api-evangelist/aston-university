@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/aston-university/integrations
+- https://n8n.io/integrations/aston-university/
+- https://composio.dev/toolkits/aston-university
+- https://monid.ai/tools/aston-university
+checked:
+- https://composio.dev/toolkits/aston-university
+- https://monid.ai/tools/aston-university
+- https://n8n.io/integrations/aston-university/
+- https://zapier.com/apps/aston-university/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

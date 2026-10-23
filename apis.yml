@@ -1,23 +1,86 @@
 aid: aston-university
+
 name: Aston University
-description: 'Aston University is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aston University is a public research university located in Birmingham, United Kingdom. It offers a wide range of undergraduate, postgraduate and research programmes across engineering, business, health, and the arts. The university is known for its strong industry links, innovative teaching methods, and contributions to scientific research. As an educational institution, it provides various digital services and resources for students, staff, and partners, though it does not expose a public API for its core systems.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aston-university/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
-- Company
-apis: []
+- Education
+- University
+- Research
+- UK
+- HigherEducation
+- Public
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://github.com/ukncsc/Vulnerability-Disclosure/blob/master/UK-Government-Vulnerability-Disclosure-Policy.md
+- type: SecurityTxt
+  url: well-known/aston-university-security.txt
+- type: WellKnown
+  url: well-known/aston-university-well-known.yml
+- type: Hosts
+  url: hosts/aston-university-hosts.yml
+- type: Vendors
+  url: vendors/aston-university-vendors.yml
+- type: TermsOfService
+  url: https://www.aston.ac.uk/staff-public/procurement/terms-and-conditions
+- type: Support
+  url: https://www.aston.ac.uk/support
+- type: SignUp
+  url: https://www.aston.ac.uk/clearing/guide/parents/sign-up
+- type: PrivacyPolicy
+  url: https://www.aston.ac.uk/about/statutes-ordinances-regulations/publication-scheme/policies-regulations/data-protection/privacy-notices
+- type: Pricing
+  url: https://www.aston.ac.uk/latest-news/plans-new-landmark-building-aston-university-are-approved-birmingham-city-council
+- type: Newsroom
+  url: https://www.aston.ac.uk/sport/news
+- type: Leadership
+  url: https://www.aston.ac.uk/sro/team
+- type: VulnerabilityDisclosure
+  url: security/aston-university-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/aston-university-domain-security.yml
 - type: Website
   url: http://www.aston.ac.uk/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: http://www.aston.ac.uk/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

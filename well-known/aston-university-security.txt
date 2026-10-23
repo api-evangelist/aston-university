@@ -1,0 +1,12 @@
+# Aston University - reporting security vulnerabilities.
+
+# Please report any security vulnerabilities to our website agency via the contact method(s) below, in accordance with the NCSC's Vulnerability Disclosure Policy.
+# Please do not include any sensitive information in your initial message, we'll provide a secure communication method in our reply to you.
+Contact: https://www.bigbluedoor.net/contact
+Contact: mailto:security@bigbluedoor.net
+
+# Our disclosure policy. By submitting a potential security incident to us, you are implicitly accepting these terms - please read this before submitting:
+Policy: https://github.com/ukncsc/Vulnerability-Disclosure/blob/master/UK-Government-Vulnerability-Disclosure-Policy.md
+
+Last-Updated: 2026-10-21 21:39:16+0100
+Expires: 2027-01-19 20:23:36+0000

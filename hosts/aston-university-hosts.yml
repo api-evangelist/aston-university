@@ -1,0 +1,76 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 3
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - other
+  - security
+  - website
+hosts:
+- host: api.ac.uk
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.ac.uk
+  role: api
+  relation: other-domain
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - Security
+  serves: []
+  registrable_domain: github.com
+  role: security
+  relation: platform
+- host: online.aston.ac.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aston.ac.uk
+  role: other
+  relation: own
+- host: reportandsupport.aston.ac.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aston.ac.uk
+  role: other
+  relation: own
+- host: www.aston.ac.uk
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - Support
+  - SignUp
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  - Leadership
+  - Website
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: aston.ac.uk
+  role: website
+  relation: own
